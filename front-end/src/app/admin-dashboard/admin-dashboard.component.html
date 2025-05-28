@@ -1,0 +1,21 @@
+<div class="dashboard-container">
+  <header class="dashboard-header">
+    <h1>Admin Dashboard</h1>
+    <button class="post-button" (click)="openPostForm()">Post Event</button>
+  </header>
+
+  <div class="content-container">
+    <div *ngIf="showPostForm" class="post-form-container">
+      <app-post-form (postSubmitted)="handlePostSubmission($event)"></app-post-form>
+    </div>
+
+    <div class="events-list">
+      <h2>Posted Events</h2>
+      <div *ngFor="let event of events" class="event-card">
+        <h3>{{ event.title }}</h3>
+        <img [src]="'data:' + event.fileType + ';base64,' + event.image" alt="Event image" class="event-image">
+        <p>Posted on: {{ event.date | date }}</p>
+      </div>
+    </div>
+  </div>
+</div>

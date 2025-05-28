@@ -1,0 +1,146 @@
+.registration-container {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #0f0c29, #302b63);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid #4d3db6;
+    font-family: 'Rajdhani', sans-serif;
+  }
+  
+  .registration-card {
+    padding: 30px;
+    border-radius: 16px;
+    background: rgba(20, 18, 58, 0.7);
+    border: 1px solid #4d3db6;
+  }
+  
+  .registration-card mat-card-header {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .registration-card mat-card-title {
+    color: #00d2ff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 15px;
+  }
+  
+  .registration-card mat-card-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+  }
+  
+  .registration-card mat-card-subtitle {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    color: #e0e0e0;
+    letter-spacing: 1px;
+  }
+  
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  
+  mat-label {
+    color: #b8b8b8 !important;
+    letter-spacing: 1px;
+  }
+  
+  input {
+    color: #fff !important;
+    font-family: 'Share Tech Mono', monospace;
+    letter-spacing: 1px;
+  }
+  
+  .mat-input-element {
+    caret-color: #00d2ff !important;
+  }
+  
+  .mat-form-field-underline {
+    background-color: #4d3db6 !important;
+  }
+  
+  .mat-form-field-ripple {
+    background-color: #00d2ff !important;
+  }
+  
+  .payment-section {
+    margin: 40px 0;
+    padding: 25px;
+    background: rgba(77, 61, 182, 0.2);
+    border-radius: 12px;
+    border: 1px solid #4d3db6;
+  }
+  
+  .payment-section h3 {
+    color: #00d2ff;
+    margin-top: 0;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .payment-section p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #e0e0e0;
+    font-weight: 600;
+  }
+  
+  mat-radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  mat-radio-button {
+    color: #e0e0e0 !important;
+  }
+  
+  .mat-radio-outer-circle {
+    border-color: #4d3db6 !important;
+  }
+  
+  .mat-radio-inner-circle {
+    background-color: #00d2ff !important;
+  }
+  
+  .mat-radio-checked .mat-radio-outer-circle {
+    border-color: #00d2ff !important;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    height: 55px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+    color: #0f0c29;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 210, 255, 0.4);
+    text-transform: uppercase;
+    margin-top: 30px;
+  }
+  
+  button[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 210, 255, 0.6);
+    background: linear-gradient(90deg, #3a7bd5, #00d2ff);
+  }

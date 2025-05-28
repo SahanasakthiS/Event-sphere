@@ -1,0 +1,127 @@
+.event-category-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #0f0c29, #302b63);
+    border-radius: 20px;
+    min-height: 100vh;
+    font-family: 'Rajdhani', sans-serif;
+  }
+  
+  .event-category-container h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 2.2rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    position: relative;
+    padding-bottom: 15px;
+  }
+  
+  .event-category-container h2::before,
+  .event-category-container h2::after {
+    content: '⚡';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #00d2ff;
+  }
+  
+  .event-category-container h2::before {
+    left: 10%;
+  }
+  
+  .event-category-container h2::after {
+    right: 10%;
+  }
+  
+  .category-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 0 20px;
+  }
+  
+  .category-card {
+    background: rgba(20, 18, 58, 0.7);
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border: 1px solid #4d3db6;
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .category-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(77, 61, 182, 0.6);
+    border-color: #00d2ff;
+  }
+  
+  .category-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .category-card:hover::after {
+    opacity: 1;
+  }
+  
+  .category-card mat-icon {
+    font-size: 50px;
+    height: 50px;
+    width: 50px;
+    margin: 20px auto 10px;
+    color: #00d2ff;
+    filter: drop-shadow(0 0 8px rgba(0, 210, 255, 0.7));
+    transition: all 0.3s ease;
+  }
+  
+  .category-card:hover mat-icon {
+    transform: scale(1.1);
+    color: #3a7bd5;
+  }
+  
+  .category-card mat-card-header {
+    padding: 20px;
+    background: rgba(77, 61, 182, 0.2);
+    height: auto;  
+  }
+  
+  .category-card mat-card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: normal;        /* allows wrapping */
+    word-break: break-word;     /* breaks long words if needed */
+    padding: 0 10px;            /* padding inside the title */
+    line-height: 1.4;           /* improves readability */
+  }
+  
+  
+  .category-card mat-card-content {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  @media (max-width: 600px) {
+    .category-card mat-card-title {
+      font-size: 1.1rem;
+    }
+  }
+  

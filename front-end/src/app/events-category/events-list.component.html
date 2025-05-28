@@ -1,0 +1,18 @@
+<div class="event-list-container">
+    <h2>{{ categoryName }} Events</h2>
+    
+    <div class="event-cards">
+      <mat-card class="event-card" *ngFor="let event of events">
+        <img mat-card-image [src]="event.poster" alt="Event poster">
+        <mat-card-content>
+          <h3>{{ event.name }}</h3>
+          <p><mat-icon>location_on</mat-icon> {{ event.college }}</p>
+          <p><mat-icon>calendar_today</mat-icon> {{ event.date }}</p>
+          <p><mat-icon>attach_money</mat-icon> {{ event.fee }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" (click)="registerForEvent(event.id)">Register</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>

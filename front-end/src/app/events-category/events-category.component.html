@@ -1,0 +1,32 @@
+<div class="event-category-container">
+    <h2>{{ eventType === 'inter' ? 'Inter College' : 'Intra College' }} Events</h2>
+    
+    <div class="category-cards">
+      <mat-card class="category-card" href="events-list" routerLink="/events-list" (click)="navigateToEventList('sports')">
+        <mat-card-header>
+          <mat-card-title>Sports Events</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-icon>sports_soccer</mat-icon>
+        </mat-card-content>
+      </mat-card>
+  
+      <mat-card class="category-card" href="events-list" routerLink="/events-list" (click)="navigateToEventList('academic')">
+        <mat-card-header> 
+          <mat-card-title>Academic Events</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-icon>menu_book</mat-icon>
+        </mat-card-content>
+      </mat-card>
+  
+      <mat-card class="category-card" href="events-list" routerLink="/events-list" (click)="navigateToEventList('finearts')">
+        <mat-card-header>
+          <mat-card-title>Fine Arts Events</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-icon>palette</mat-icon>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>

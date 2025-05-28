@@ -1,0 +1,20 @@
+<div class="dashboard-container">
+  <header class="dashboard-header">
+    <h1>Student Dashboard</h1>
+  </header>
+
+  <div class="events-list">
+    <h2>Available Events</h2>
+    <div *ngFor="let event of events" class="event-card">
+      <h3>{{ event.title }}</h3>
+      <img [src]="event.imageUrl" alt="Event image" class="event-image">
+      <button class="register-button" (click)="openRegistrationForm(event)">Register</button>
+    </div>
+  </div>
+
+  <div *ngIf="showRegistrationForm" class="registration-form-container">
+    <app-register 
+      [event]="selectedEvent">
+    </app-register>
+  </div>
+</div>

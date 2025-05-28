@@ -1,0 +1,20 @@
+<div class="post-form">
+  <h2>Create New Event</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="title">Event Title</label>
+      <input type="text" id="title" [(ngModel)]="event.title" name="title" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="image">Event Image</label>
+      <input type="file" id="image" #fileInput (change)="onFileSelected($event)" accept="image/*" required>
+
+    </div>
+    
+    <div class="form-actions">
+      <button type="button" class="cancel-button" (click)="onCancel()">Cancel</button>
+      <button type="submit" class="submit-button">Post Event</button>
+    </div>
+  </form>
+</div>
